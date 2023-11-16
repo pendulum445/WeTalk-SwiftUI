@@ -18,18 +18,33 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $selection) {
-            let images = ["chat", "contacts", "discover", "me"]
-            let tabs = ["微信", "通讯录", "发现", "我"]
+            ChatListView()
+                .tabItem {
+                    Image(selection == 0 ? "bottom_bar_chat_filled" : "bottom_bar_chat")
+                    Text("微信")
+                }
+                .tag(0)
             
-            ForEach(0..<4) { index in
-                ChatListView()
-                    .tabItem {
-                        Image(selection == index ? "bottom_bar_\(images[index])_filled" : "bottom_bar_\(images[index])")
-                        
-                        Text(tabs[index])
-                    }
-                    .tag(index)
-            }
+            ContactsView()
+                .tabItem {
+                    Image(selection == 1 ? "bottom_bar_contacts_filled" : "bottom_bar_contacts")
+                    Text("通讯录")
+                }
+                .tag(1)
+            
+            ChatListView()
+                .tabItem {
+                    Image(selection == 2 ? "bottom_bar_discover_filled" : "bottom_bar_discover")
+                    Text("发现")
+                }
+                .tag(2)
+            
+            ChatListView()
+                .tabItem {
+                    Image(selection == 3 ? "bottom_bar_me_filled" : "bottom_bar_me")
+                    Text("我")
+                }
+                .tag(3)
         }
         .tint(.brand100)
     }

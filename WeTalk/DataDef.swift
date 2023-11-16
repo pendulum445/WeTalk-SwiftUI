@@ -13,11 +13,11 @@ struct ChatMessage: Decodable {
     let type: Int
 }
 
-struct FriendInfo: Decodable {
+struct FriendInfo: Decodable, Identifiable {
     let avatarUrl: String?
     let nickName: String
     let noteName: String?
-    let userId: String
+    let id: String
     let messages: [ChatMessage]
     
     func displayName() -> String {
@@ -34,4 +34,9 @@ struct ChatCellModel: Decodable, Identifiable {
 struct ChatListResponse: Decodable {
     let code: Int
     let data: [ChatCellModel]
+}
+
+struct FriendListResponse : Decodable {
+    let code: Int
+    let data: [FriendInfo]
 }

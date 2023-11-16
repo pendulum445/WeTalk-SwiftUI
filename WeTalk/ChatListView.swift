@@ -151,5 +151,5 @@ class ChatListViewModel: ObservableObject {
 }
 
 #Preview {
-    ContentView()
+    ChatListView()
 }
