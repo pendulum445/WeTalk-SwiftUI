@@ -57,12 +57,22 @@ struct ChatListView: View {
             NavigationBarView(title: "微信", firstRightButtonImageName: "nav_bar_search", secondRightButtonImageName: "nav_bar_add")
                 .background(.BW_BG_93)
             
-            if self.viewModel.models.count > 0 {
-                List(self.viewModel.models) { model in
-                    ChatCell(model: model)
+            NavigationView {
+                if self.viewModel.models.count > 0 {
+                    List(self.viewModel.models) { model in
+                        ZStack {
+                            ChatCell(model: model)
+                            
+                            NavigationLink(
+                                destination: ChatDetailView().navigationBarHidden(true),
+                                label: { EmptyView() }
+                            ).opacity(0)
+                        }
+                        .listRowSeparator(.hidden)
+                    }
+                    .background(.white)
+                    .listStyle(PlainListStyle())
                 }
-                .background(.white)
-                .listStyle(PlainListStyle())
             }
             
             Spacer()
@@ -129,7 +139,6 @@ struct ChatCell: View {
                     .offset(y: 34)
             }
         }
-        .listRowSeparator(.hidden)
         .onTapGesture {
             self.hasRead = true
         }

@@ -12,6 +12,7 @@
 		A208FA872B0519DA00E9D355 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = A208FA862B0519DA00E9D355 /* URLImageStore */; };
 		A208FA8A2B05BF9200E9D355 /* LookinServer in Frameworks */ = {isa = PBXBuildFile; productRef = A208FA892B05BF9200E9D355 /* LookinServer */; };
 		A208FA8C2B05E7FF00E9D355 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A208FA8B2B05E7FF00E9D355 /* ContactsView.swift */; };
+		A208FA8E2B05F58300E9D355 /* ChatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A208FA8D2B05F58300E9D355 /* ChatDetailView.swift */; };
 		A23545072B038079008CF01A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A23545062B038079008CF01A /* Alamofire */; };
 		A235450A2B038241008CF01A /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = A23545092B038241008CF01A /* AlamofireImage */; };
 		A2F91F2A2B024DCC00ECBDDE /* WeTalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F91F292B024DCC00ECBDDE /* WeTalkApp.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		A208FA812B05183A00E9D355 /* DataDef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDef.swift; sourceTree = "<group>"; };
 		A208FA8B2B05E7FF00E9D355 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		A208FA8D2B05F58300E9D355 /* ChatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailView.swift; sourceTree = "<group>"; };
 		A2F91F262B024DCC00ECBDDE /* WeTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F91F292B024DCC00ECBDDE /* WeTalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeTalkApp.swift; sourceTree = "<group>"; };
 		A2F91F2B2B024DCC00ECBDDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				A2F91F2F2B024DCE00ECBDDE /* Preview Content */,
 				A208FA812B05183A00E9D355 /* DataDef.swift */,
 				A208FA8B2B05E7FF00E9D355 /* ContactsView.swift */,
+				A208FA8D2B05F58300E9D355 /* ChatDetailView.swift */,
 			);
 			path = WeTalk;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			files = (
 				A2F91F2C2B024DCC00ECBDDE /* ContentView.swift in Sources */,
 				A2F91F382B02511300ECBDDE /* ChatListView.swift in Sources */,
+				A208FA8E2B05F58300E9D355 /* ChatDetailView.swift in Sources */,
 				A2F91F3A2B0251B000ECBDDE /* NavigationBarView.swift in Sources */,
 				A208FA8C2B05E7FF00E9D355 /* ContactsView.swift in Sources */,
 				A208FA822B05183A00E9D355 /* DataDef.swift in Sources */,
