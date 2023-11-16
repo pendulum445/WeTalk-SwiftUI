@@ -7,18 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A208FA822B05183A00E9D355 /* DataDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = A208FA812B05183A00E9D355 /* DataDef.swift */; };
+		A208FA852B0519DA00E9D355 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = A208FA842B0519DA00E9D355 /* URLImage */; };
+		A208FA872B0519DA00E9D355 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = A208FA862B0519DA00E9D355 /* URLImageStore */; };
+		A208FA8A2B05BF9200E9D355 /* LookinServer in Frameworks */ = {isa = PBXBuildFile; productRef = A208FA892B05BF9200E9D355 /* LookinServer */; };
+		A23545072B038079008CF01A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A23545062B038079008CF01A /* Alamofire */; };
+		A235450A2B038241008CF01A /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = A23545092B038241008CF01A /* AlamofireImage */; };
 		A2F91F2A2B024DCC00ECBDDE /* WeTalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F91F292B024DCC00ECBDDE /* WeTalkApp.swift */; };
 		A2F91F2C2B024DCC00ECBDDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F91F2B2B024DCC00ECBDDE /* ContentView.swift */; };
 		A2F91F2E2B024DCE00ECBDDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2F91F2D2B024DCE00ECBDDE /* Assets.xcassets */; };
 		A2F91F312B024DCE00ECBDDE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2F91F302B024DCE00ECBDDE /* Preview Assets.xcassets */; };
+		A2F91F382B02511300ECBDDE /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F91F372B02511300ECBDDE /* ChatListView.swift */; };
+		A2F91F3A2B0251B000ECBDDE /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F91F392B0251B000ECBDDE /* NavigationBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A208FA812B05183A00E9D355 /* DataDef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDef.swift; sourceTree = "<group>"; };
 		A2F91F262B024DCC00ECBDDE /* WeTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2F91F292B024DCC00ECBDDE /* WeTalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeTalkApp.swift; sourceTree = "<group>"; };
 		A2F91F2B2B024DCC00ECBDDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A2F91F2D2B024DCE00ECBDDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2F91F302B024DCE00ECBDDE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A2F91F372B02511300ECBDDE /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		A2F91F392B0251B000ECBDDE /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A208FA8A2B05BF9200E9D355 /* LookinServer in Frameworks */,
+				A208FA872B0519DA00E9D355 /* URLImageStore in Frameworks */,
+				A23545072B038079008CF01A /* Alamofire in Frameworks */,
+				A208FA852B0519DA00E9D355 /* URLImage in Frameworks */,
+				A235450A2B038241008CF01A /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +67,13 @@
 		A2F91F282B024DCC00ECBDDE /* WeTalk */ = {
 			isa = PBXGroup;
 			children = (
-				A2F91F292B024DCC00ECBDDE /* WeTalkApp.swift */,
+				A2F91F372B02511300ECBDDE /* ChatListView.swift */,
 				A2F91F2B2B024DCC00ECBDDE /* ContentView.swift */,
+				A2F91F392B0251B000ECBDDE /* NavigationBarView.swift */,
+				A2F91F292B024DCC00ECBDDE /* WeTalkApp.swift */,
 				A2F91F2D2B024DCE00ECBDDE /* Assets.xcassets */,
 				A2F91F2F2B024DCE00ECBDDE /* Preview Content */,
+				A208FA812B05183A00E9D355 /* DataDef.swift */,
 			);
 			path = WeTalk;
 			sourceTree = "<group>";
@@ -83,6 +102,13 @@
 			dependencies = (
 			);
 			name = WeTalk;
+			packageProductDependencies = (
+				A23545062B038079008CF01A /* Alamofire */,
+				A23545092B038241008CF01A /* AlamofireImage */,
+				A208FA842B0519DA00E9D355 /* URLImage */,
+				A208FA862B0519DA00E9D355 /* URLImageStore */,
+				A208FA892B05BF9200E9D355 /* LookinServer */,
+			);
 			productName = WeTalk;
 			productReference = A2F91F262B024DCC00ECBDDE /* WeTalk.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +137,12 @@
 				Base,
 			);
 			mainGroup = A2F91F1D2B024DCC00ECBDDE;
+			packageReferences = (
+				A23545052B038079008CF01A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A23545082B038241008CF01A /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+				A208FA832B0519DA00E9D355 /* XCRemoteSwiftPackageReference "url-image" */,
+				A208FA882B05BF9200E9D355 /* XCRemoteSwiftPackageReference "LookinServer" */,
+			);
 			productRefGroup = A2F91F272B024DCC00ECBDDE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2F91F2C2B024DCC00ECBDDE /* ContentView.swift in Sources */,
+				A2F91F382B02511300ECBDDE /* ChatListView.swift in Sources */,
+				A2F91F3A2B0251B000ECBDDE /* NavigationBarView.swift in Sources */,
+				A208FA822B05183A00E9D355 /* DataDef.swift in Sources */,
 				A2F91F2A2B024DCC00ECBDDE /* WeTalkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +315,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +345,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +381,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A208FA832B0519DA00E9D355 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+		A208FA882B05BF9200E9D355 /* XCRemoteSwiftPackageReference "LookinServer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/QMUI/LookinServer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.4;
+			};
+		};
+		A23545052B038079008CF01A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A23545082B038241008CF01A /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A208FA842B0519DA00E9D355 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A208FA832B0519DA00E9D355 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+		A208FA862B0519DA00E9D355 /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A208FA832B0519DA00E9D355 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
+		A208FA892B05BF9200E9D355 /* LookinServer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A208FA882B05BF9200E9D355 /* XCRemoteSwiftPackageReference "LookinServer" */;
+			productName = LookinServer;
+		};
+		A23545062B038079008CF01A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A23545052B038079008CF01A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		A23545092B038241008CF01A /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A23545082B038241008CF01A /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A2F91F1E2B024DCC00ECBDDE /* Project object */;
 }
